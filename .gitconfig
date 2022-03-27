@@ -2,7 +2,8 @@
 	name = adam kamsheh
 [alias]
 	st = status
-	co = commit
+	ci = commit
+	co = checkout
         br = branch
 	re = "remote -v"
 [core]

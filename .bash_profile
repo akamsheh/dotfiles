@@ -24,9 +24,12 @@ if [[ -d "$HOME/.pyenv" && ! -L "$HOME/.pyenv"  ]]; then
     eval "$(pyenv init --path)"
 fi
 
+# For Rust package manager cargo
+. "$HOME/.cargo/env"
+
 # Load .bashrc last
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
-. "$HOME/.cargo/env"
+
