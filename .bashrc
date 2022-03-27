@@ -44,10 +44,6 @@ unset rc
 
 alias dotf='/usr/bin/git --git-dir=/home/adam/.dotfiles/ --work-tree=/home/adam'
 
-if [[ -d "$HOME/.pyenv" && ! -L "$HOME/.pyenv"  ]]; then
-    eval "$(pyenv init -)"
-fi
-
 # Set nvm defaults if present
 if [[ -d "$HOME/.nvm" && ! -L "$HOME/.nvm"  ]]; then
     export NVM_DIR="$HOME/.nvm"
@@ -65,4 +61,7 @@ alias cl="clear"
 if [ -f ~/.credentialsrc ]; then
     . ~/.credentialsrc
 fi
-. "$HOME/.cargo/env"
+
+if [ -f ~/.cargo/env ]; then
+    . "$HOME/.cargo/env"
+fi
