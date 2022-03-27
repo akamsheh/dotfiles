@@ -1,0 +1,9 @@
+[user]
+	name = adam kamsheh
+[alias]
+	st = status
+	co = commit
+        br = branch
+	re = "remote -v"
+[core]
+	editor = nvim
