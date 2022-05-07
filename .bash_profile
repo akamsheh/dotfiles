@@ -1,5 +1,8 @@
 # .bash_profile
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 ###########################################################################
 # Defaults from Fedora35 installation #####################################
 ###########################################################################
@@ -32,9 +35,8 @@ fi
 # For Rust package manager cargo
 . "$HOME/.cargo/env"
 
-# Load .bashrc last
+# Load .bashrc last (always do last)
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
-
 

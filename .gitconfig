@@ -1,5 +1,6 @@
 [user]
 	name = adam kamsheh
+	email = 
 [alias]
 	st = status
 	ci = commit

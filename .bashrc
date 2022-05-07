@@ -71,3 +71,4 @@ fi
 if [ -f ~/.cargo/env ]; then
     . "$HOME/.cargo/env"
 fi
+eval "$(pyenv init -)"

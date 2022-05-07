@@ -3,6 +3,8 @@
 "   To install a plugin, simply do a git clone
 "   to the ~/.local/share/nvim/site/plugin/<your plugin>
 
+lua require('plugins')
+
 " Sensible defualts
 set number     " Show line number
 set ignorecase " Ignore case when all lower case
