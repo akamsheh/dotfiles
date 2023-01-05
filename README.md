@@ -5,3 +5,13 @@ Using dotfile management mentioned in [HackerNews](https://news.ycombinator.com/
 Expects:
 - NeoVim
 - Pyenv
+
+## Neovim
+ - Uses [VimPlug](https://github.com/junegunn/vim-plug)
+
+TODO:
+neovim
+  - clipboard
+  - autocompletion
+
+

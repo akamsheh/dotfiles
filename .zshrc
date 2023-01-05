@@ -29,3 +29,5 @@ if [ -f ~/.credentialsrc ]; then
     . ~/.credentialsrc
 fi
 
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line

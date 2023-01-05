@@ -22,6 +22,9 @@ if [[ -d /snap/bin/ ]]
 then
     PATH="/snap/bin:$PATH"
 fi
+
+# Set neovim path
+PATH="$HOME/bin/nvim/bin:$PATH"
 export PATH
 
 # Set nvm defaults if present
