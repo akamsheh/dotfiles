@@ -18,16 +18,11 @@ if [[ -d "$HOME/.pyenv" && ! -L "$HOME/.pyenv"  ]]; then
 fi
 
 # Aliases
-alias dotf='/usr/bin/git --git-dir=/home/adam/.dotfiles/ --work-tree=/home/adam'
+alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias la="ls -lah"
 alias ll="ls -lh"
 alias cl="clear"
 
-# Read in credentials which are just a file with
-# environment vars set. Don't version control this!
-if [ -f ~/.credentialsrc ]; then
-    . ~/.credentialsrc
-fi
-
+# Keybinds
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
