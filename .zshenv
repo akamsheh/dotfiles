@@ -1,4 +1,3 @@
-
 # Set path for pyenv if it exists
 if [[ -d "$HOME/.pyenv" && ! -L "$HOME/.pyenv"  ]]; then
     export PYENV_ROOT="$HOME/.pyenv"

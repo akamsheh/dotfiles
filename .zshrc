@@ -19,10 +19,22 @@ fi
 
 # Aliases
 alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 alias la="ls -lah"
 alias ll="ls -lh"
 alias cl="clear"
 
+alias gitst="git status"
+alias gitaa="git add --all"
+alias gitl="lazygit"
+
+alias vi=nvim
+alias c=clear
+alias tf=terraform
+
+# Add custom prompt
+source ~/.zsh_prompt
+
 # Keybinds
-bindkey '^A' beginning-of-line
-bindkey '^E' end-of-line
+bindkey "^[[3~" delete-char
+
