@@ -1,0 +1,31 @@
+[env]
+TERM = "xterm-256color"
+
+[font]
+# Fira Code font configuration
+normal = { family = "Fira Code", style = "Regular" }
+bold = { family = "Fira Code", style = "Bold" }
+italic = { family = "Fira Code", style = "Italic" }
+bold_italic = { family = "Fira Code", style = "Bold Italic" }
+
+size = 11.0
+
+# Optional: Font offset and glyph offset
+offset = { x = 0, y = 0 }
+glyph_offset = { x = 0, y = 0 }
+
+# Optional: Enable ligatures (Fira Code is known for its ligatures)
+#[font.features]
+#"Fira Code" = ["+liga", "+calt"]
+
+# Window padding
+[window]
+padding = { x = 6, y = 6 }
+
+# Color scheme (optional, you can customize)
+[colors]
+primary = { background = "0x282c34", foreground = "0xabb2bf" }
+
+# Cursor style
+[cursor]
+style = "Block"

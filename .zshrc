@@ -11,9 +11,9 @@ compinit
 # End of lines added by compinstall
 
 # Aliases	
-alias la="ls -la"
-alias ll="ls -l"
-alias ll="ls -l"
+alias la="ls -lah"
+alias ll="ls -lh"
+alias lr="ls -lrth"
 alias gitst="git status"
 alias gitaa="git add --all"
 alias gitl="lazygit"

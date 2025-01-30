@@ -1,13 +1,3 @@
 [user]
-	name = adam kamsheh
-	email = 22039356+akamsheh@users.noreply.github.com
-[alias]
-	st = status
-	ci = commit
-	co = checkout
-        br = branch
-	re = "remote -v"
-[core]
-	editor = nvim
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+	email = 22039356+akamsheh@users.noreply.github.co
+	name = adam
