@@ -1,0 +1,22 @@
+# ~/.zsh_prompt
+
+# Load version control info
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '%F{green}(%b)%f'
+
+# Get AWS profile
+function aws_profile() {
+  if [[ -n $AWS_PROFILE ]]; then
+    echo "%F{blue}[aws:$AWS_PROFILE]%f"
+  elif [[ -n $AWS_DEFAULT_PROFILE ]]; then
+    echo "%F{blue}[aws:$AWS_DEFAULT_PROFILE]%f"
+  fi
+}
+
+# Set the prompt
+setopt PROMPT_SUBST
+PROMPT='%F{cyan}%~%f ${vcs_info_msg_0_} $(aws_profile)
+%F{yellow}→%f '
