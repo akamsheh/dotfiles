@@ -33,3 +33,6 @@ if [[ -d "$HOME/.nvm" && ! -L "$HOME/.nvm"  ]]; then
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
 
+# Disable keyring. Not installed on Arch OS
+export MYSQL_WORKBENCH_DISABLE_KEYRING=1
+

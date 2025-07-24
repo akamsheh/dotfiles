@@ -1,6 +1,3 @@
-
-
--- ~/.config/nvim/lua/settings.lua
 local opt = vim.opt
 
 opt.number = true
@@ -21,3 +18,5 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
 opt.iskeyword:append("-")
+
+vim.cmd([[colorscheme gruvbox]])

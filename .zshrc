@@ -22,6 +22,8 @@ alias vi=nvim
 alias c=clear
 alias tf=terraform
 alias k=kubectl
+alias dk=docker
+alias dkrmi='docker rmi $(docker images -qa)'
 
 
 # Add custom prompt
@@ -29,6 +31,9 @@ source ~/.zsh_prompt
 source ~/.zshenv
 
 bindkey "^[[3~" delete-char
+
+# Set emacs key-bindings
+bindkey -e
 
 
 export NVM_DIR="$HOME/.nvm"
@@ -575,3 +580,9 @@ fi
 }
 ### end: completion.zsh ###
 
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# test

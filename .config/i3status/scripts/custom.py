@@ -7,12 +7,8 @@ import time
 import psutil
 import datetime
 import logging
-import traceback
-import socket
 import speedtest
 import threading
-from pathlib import Path
-import subprocess
 
 # Ensure log directory exists
 LOG_DIR = '/tmp/i3_status_bar_logs'
