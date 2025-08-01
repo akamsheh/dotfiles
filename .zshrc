@@ -25,6 +25,10 @@ alias k=kubectl
 alias dk=docker
 alias dkrmi='docker rmi $(docker images -qa)'
 
+# Dotfile git shortcut
+export MY_CONFIG_GIT_DIR=$HOME/.myconf
+alias config='/usr/bin/git --git-dir=$MY_CONFIG_GIT_DIR --work-tree=$HOME'
+
 
 # Add custom prompt
 source ~/.zsh_prompt
