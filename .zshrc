@@ -24,6 +24,7 @@ alias tf=terraform
 alias k=kubectl
 alias dk=docker
 alias dkrmi='docker rmi $(docker images -qa)'
+alias pc="podman-compose"
 
 # Dotfile git shortcut
 export MY_CONFIG_GIT_DIR=$HOME/.myconf
