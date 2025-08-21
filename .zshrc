@@ -25,6 +25,7 @@ alias k=kubectl
 alias dk=docker
 alias dkrmi='docker rmi $(docker images -qa)'
 alias pc="podman-compose"
+alias mk-start="minikube start --driver=podman --container-runtime=crio --memory=8192 --cpus=8"
 
 # Dotfile git shortcut
 export MY_CONFIG_GIT_DIR=$HOME/.myconf
@@ -591,3 +592,7 @@ fi
 source <(ng completion script)
 
 # test
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
