@@ -29,7 +29,7 @@ git clone --separate-git-dir=$MY_CONFIG_GIT_DIR /path/to/repo ~
 ```sh
 export MY_CONFIG_GIT_DIR=$HOME/.myconf
 git clone --separate-git-dir=$MY_CONFIG_GIT_DIR /path/to/repo $HOME/myconf-tmp # Clone contents to tmp directory, initially
-cp -rn $HOME/myconf-tmp ~ # Copy recursively but do not overwrite existing files
+cp -rn $HOME/myconf-tmp/ ~ # Copy recursively but do not overwrite existing files
 rm -r ~/myconf-tmp/
 ```
 
