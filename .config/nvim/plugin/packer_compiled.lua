@@ -100,7 +100,7 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["conform.nvim"] = {
-    config = { "\27LJ\2\n¤\3\0\0\5\0\22\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\18\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\19\0025\3\20\0=\3\21\2B\0\2\1K\0\1\0\19format_on_save\1\0\2\15timeout_ms\3ô\3\17lsp_fallback\2\21formatters_by_ft\1\0\2\19format_on_save\0\21formatters_by_ft\0\trust\1\2\0\0\frustfmt\tyaml\1\2\0\0\rprettier\tjson\1\2\0\0\rprettier\15typescript\1\2\0\0\rprettier\15javascript\1\2\0\0\rprettier\vpython\1\2\0\0\nblack\blua\1\0\a\vpython\0\15javascript\0\tjson\0\blua\0\trust\0\tyaml\0\15typescript\0\1\2\0\0\vstylua\nsetup\fconform\frequire\0" },
+    config = { "\27LJ\2\nï¿½\3\0\0\5\0\22\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\18\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\19\0025\3\20\0=\3\21\2B\0\2\1K\0\1\0\19format_on_save\1\0\2\15timeout_ms\3ï¿½\3\17lsp_fallback\2\21formatters_by_ft\1\0\2\19format_on_save\0\21formatters_by_ft\0\trust\1\2\0\0\frustfmt\tyaml\1\2\0\0\rprettier\tjson\1\2\0\0\rprettier\15typescript\1\2\0\0\rprettier\15javascript\1\2\0\0\rprettier\vpython\1\2\0\0\nblack\blua\1\0\a\vpython\0\15javascript\0\tjson\0\blua\0\trust\0\tyaml\0\15typescript\0\1\2\0\0\vstylua\nsetup\fconform\frequire\0" },
     loaded = true,
     path = "/home/adam/.local/share/nvim/site/pack/packer/start/conform.nvim",
     url = "https://github.com/stevearc/conform.nvim"
@@ -140,7 +140,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: conform.nvim
 time([[Config for conform.nvim]], true)
-try_loadstring("\27LJ\2\n¤\3\0\0\5\0\22\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\18\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\19\0025\3\20\0=\3\21\2B\0\2\1K\0\1\0\19format_on_save\1\0\2\15timeout_ms\3ô\3\17lsp_fallback\2\21formatters_by_ft\1\0\2\19format_on_save\0\21formatters_by_ft\0\trust\1\2\0\0\frustfmt\tyaml\1\2\0\0\rprettier\tjson\1\2\0\0\rprettier\15typescript\1\2\0\0\rprettier\15javascript\1\2\0\0\rprettier\vpython\1\2\0\0\nblack\blua\1\0\a\vpython\0\15javascript\0\tjson\0\blua\0\trust\0\tyaml\0\15typescript\0\1\2\0\0\vstylua\nsetup\fconform\frequire\0", "config", "conform.nvim")
+try_loadstring("\27LJ\2\nï¿½\3\0\0\5\0\22\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\18\0005\3\4\0005\4\3\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\19\0025\3\20\0=\3\21\2B\0\2\1K\0\1\0\19format_on_save\1\0\2\15timeout_ms\3ï¿½\3\17lsp_fallback\2\21formatters_by_ft\1\0\2\19format_on_save\0\21formatters_by_ft\0\trust\1\2\0\0\frustfmt\tyaml\1\2\0\0\rprettier\tjson\1\2\0\0\rprettier\15typescript\1\2\0\0\rprettier\15javascript\1\2\0\0\rprettier\vpython\1\2\0\0\nblack\blua\1\0\a\vpython\0\15javascript\0\tjson\0\blua\0\trust\0\tyaml\0\15typescript\0\1\2\0\0\vstylua\nsetup\fconform\frequire\0", "config", "conform.nvim")
 time([[Config for conform.nvim]], false)
 
 _G._packer.inside_compile = false

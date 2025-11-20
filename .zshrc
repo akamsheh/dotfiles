@@ -587,10 +587,16 @@ fi
 ### end: completion.zsh ###
 
 
-
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+# source <(ng completion script)
 
+
+# Pyenv Setup
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+<<<<<<< HEAD
 
 # For Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -598,7 +604,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init - bash)"
 eval "$(pyenv virtualenv-init -)"
 
+=======
+>>>>>>> 682be5599a06ca3777c0b1238989e0bd9ba7f0ab
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+

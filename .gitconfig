@@ -1,3 +1,11 @@
 [user]
 	email = 22039356+akamsheh@users.noreply.github.com
 	name = adam
+[core]
+	editor = nvim
+[alias]
+  s = status
+  c = commit
+  d = diff
+  co = checkout
+  br = branch
