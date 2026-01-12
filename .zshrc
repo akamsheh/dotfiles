@@ -8,6 +8,9 @@ zstyle :compinstall filename '/home/${USER}/.zshrc'
 
 autoload -Uz compinit
 compinit
+
+# Auto completion for aws cli
+complete -C `which aws_completer` aws
 # End of lines added by compinstall
 
 # Aliases	
@@ -30,6 +33,7 @@ alias mk-start="minikube start --driver=podman --container-runtime=crio --memory
 # Dotfile git shortcut
 export MY_CONFIG_GIT_DIR=$HOME/.myconf
 alias config='/usr/bin/git --git-dir=$MY_CONFIG_GIT_DIR --work-tree=$HOME'
+alias config-lg='lazygit -g $MY_CONFIG_GIT_DIR -w $HOME'
 
 
 # Add custom prompt

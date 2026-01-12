@@ -30,6 +30,16 @@ require("mason-lspconfig").setup({
     "pyright",
     "ts_ls",
     "rust_analyzer",
+    "gopls",
+    "jdtls",
+    "clangd",
+    "html",
+    "cssls",
+    "tailwindcss",
+    "yamlls",
+    "jsonls",
+    "lemminx",
+    "taplo",
   },
   automatic_installation = true,
 })
@@ -65,7 +75,22 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Enable LSP servers
-local servers = { "lua_ls", "pyright", "ts_ls", "rust_analyzer" }
+local servers = {
+  "lua_ls",
+  "pyright",
+  "ts_ls",
+  "rust_analyzer",
+  "gopls",
+  "jdtls",
+  "clangd",
+  "html",
+  "cssls",
+  "tailwindcss",
+  "yamlls",
+  "jsonls",
+  "lemminx",
+  "taplo",
+}
 for _, lsp in ipairs(servers) do
   vim.lsp.enable(lsp)
 end
