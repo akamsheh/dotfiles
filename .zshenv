@@ -36,3 +36,5 @@ fi
 # Disable keyring. Not installed on Arch OS
 export MYSQL_WORKBENCH_DISABLE_KEYRING=1
 
+export XDG_CONFIG_HOME=$HOME/.config
+

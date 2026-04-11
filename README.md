@@ -130,22 +130,42 @@ glxinfo | grep -i nvidia  # Should show proprietary driver instead of Mesa NVK
 
 Modern Lua-based configuration located in `~/.config/nvim/`
 
+### Structure
+
+```
+~/.config/nvim/
+  init.lua                  -- Entry point: settings, keymaps, lazy
+  lua/
+    config/
+      settings.lua          -- Vim options
+      keymaps.lua           -- Key mappings
+      lazy.lua              -- lazy.nvim bootstrap and setup
+    plugins/
+      editor.lua            -- Gruvbox, nvim-tree, telescope, treesitter
+      lsp.lua               -- Mason, basedpyright, ruff
+      completion.lua         -- blink.cmp
+      formatting.lua         -- conform.nvim (format-on-save)
+      venv.lua               -- venv-selector.nvim (conda/venv)
+```
+
 ### Features
 
-- **Plugin Manager**: Packer.nvim (auto-installs on first run)
+- **Plugin Manager**: lazy.nvim (auto-bootstraps on first run)
 - **LSP Support**: Mason for language server management with auto-installation
-- **Autocompletion**: nvim-cmp with LSP, buffer, path, and snippet sources
+- **Autocompletion**: blink.cmp with LSP, snippets, buffer, and path sources
 - **Syntax Highlighting**: Treesitter with auto-install parsers
 - **Fuzzy Finding**: Telescope with fzf-native for fast searching
 - **File Explorer**: nvim-tree
 - **Auto-formatting**: conform.nvim with format-on-save
+- **Linting**: Ruff LSP for Python diagnostics
+- **Venv Support**: venv-selector.nvim with conda/miniconda support
 - **Color Scheme**: Gruvbox dark
 
 ### Language Support
 
 **LSP Servers** (auto-installed via Mason):
 - Lua (lua_ls)
-- Python (pyright)
+- Python (basedpyright + ruff)
 - TypeScript/JavaScript (ts_ls)
 - Rust (rust_analyzer)
 - Go (gopls)
@@ -156,7 +176,7 @@ Modern Lua-based configuration located in `~/.config/nvim/`
 
 **Formatters** (format-on-save enabled):
 - Lua: stylua
-- Python: black
+- Python: ruff_format
 - JavaScript/TypeScript: prettier
 - Rust: rustfmt
 - Go: goimports + gofmt
@@ -184,6 +204,9 @@ Leader key: `,`
 - `,fd` - Find definitions
 - `,fi` - Find implementations
 
+**Python:**
+- `,cv` - Select conda/virtual environment
+
 **LSP Actions:**
 - `gd` - Go to definition
 - `gD` - Go to declaration
@@ -195,6 +218,11 @@ Leader key: `,`
 - `<space>ca` - Code actions
 - `<space>D` - Type definition
 
+**Diagnostics:**
+- `<space>e` - Show diagnostic in floating window
+- `[d` / `]d` - Jump to previous/next diagnostic
+- `<space>q` - Open all diagnostics in location list
+
 **Autocompletion:**
 - `Ctrl-Space` - Trigger completion
 - `Enter` - Confirm selection
@@ -203,29 +231,20 @@ Leader key: `,`
 
 ### First-Time Setup
 
-1. Install Neovim (v0.9+)
-2. Install ripgrep: `sudo dnf install ripgrep`
-3. Open Neovim: `nvim`
-4. Packer will auto-install and sync plugins
-5. Restart Neovim after initial plugin installation
-6. LSP servers and formatters will auto-install on first use
+1. Install Neovim (v0.11+)
+2. Install ripgrep: `brew install ripgrep` / `sudo dnf install ripgrep`
+3. Install fd: `brew install fd` / `sudo dnf install fd-find` (required for venv-selector)
+4. Open Neovim: `nvim`
+5. lazy.nvim will auto-bootstrap and install all plugins
+6. Mason will auto-install LSP servers and formatters on first use
 
 ### Python Project Setup
 
 For best autocompletion with Python frameworks:
 
 ```sh
-# Install packages in your project
-pip install boto3 django flask
-
 # Install type stubs for better completions
 pip install boto3-stubs django-stubs types-requests
 ```
 
-For virtual environments, activate before launching Neovim or create `pyrightconfig.json`:
-```json
-{
-  "venvPath": ".",
-  "venv": ".venv"
-}
-```
+For conda environments, use `,cv` in Neovim to select your conda env interactively. This updates the LSP python path automatically.

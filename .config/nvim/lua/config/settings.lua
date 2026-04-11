@@ -19,4 +19,8 @@ opt.splitright = true
 opt.splitbelow = true
 opt.iskeyword:append("-")
 
-vim.cmd([[colorscheme gruvbox]])
+-- Autosave when leaving buffer or losing focus
+opt.autowriteall = true
+vim.api.nvim_create_autocmd({ "FocusLost", "BufLeave" }, {
+	command = "silent! wall",
+})
